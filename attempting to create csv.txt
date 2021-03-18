@@ -1,0 +1,42 @@
+#include<stdio.h>
+ 
+#include<string.h>
+ 
+typdef struct{
+	char AccountNumber;
+	char FirstName;
+	char LastName;
+	char AccountBalance;
+	char LastPaymentAmount;
+} 
+
+printf("\n Creating %s.csv file",filename);
+ 
+FILE *fp;
+ 
+;
+ 
+filename=strcat(filename,".csv");
+ 
+fp=fopen(filename,"w+");
+ 
+fprintf(fp,"AccountNumber, FirstName, LastName, AccountBalance, LastPaymentAmount,");
+ 
+ 
+fclose(fp);
+ 
+printf("\n %sfile created",filename);
+ 
+}
+ 
+int main(){
+ 
+ 
+    printf("\n Enter the filename :");
+ 
+    gets(str);
+
+ 
+return 0;
+ 
+}
